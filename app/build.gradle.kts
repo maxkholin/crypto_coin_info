@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.cryptoinfo"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.cryptoinfo"
@@ -59,8 +59,14 @@ dependencies {
 
     implementation(libs.picasso)
 
-    implementation(libs.androidx.room.ktx)
-    kapt("androidx.room:room-ktx:2.6.1")
+    implementation("com.google.dagger:dagger:2.48")
+    kapt("com.google.dagger:dagger-android-processor:2.48")
+    kapt("com.google.dagger:dagger-compiler:2.48")
+
+    kapt(libs.androidx.room.ktx)
+
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 
     testImplementation(libs.junit)

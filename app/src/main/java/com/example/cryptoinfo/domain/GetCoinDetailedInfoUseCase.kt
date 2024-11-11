@@ -1,8 +1,9 @@
 package com.example.cryptoinfo.domain
 
 import androidx.lifecycle.LiveData
+import javax.inject.Inject
 
-class GetCoinDetailedInfoUseCase(
+class GetCoinDetailedInfoUseCase @Inject constructor(
     private val repository: CoinRepository
 ) {
 
