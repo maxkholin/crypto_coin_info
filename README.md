@@ -29,7 +29,7 @@ Crypto Info App – это Android-приложение, которое пока
 ### data – слой данных:
 - **database** – работа с локальной базой данных Room.
 - **mapper** – классы для преобразования моделей данных.
-- **network** – работа с API, включает классы ApiService и ApiFactory для создания запросов.
+- **network** – работа с API.
 - **repository** – реализация CoinRepositoryImpl для работы с данными.
 - **workers** – RefreshDataWorker для периодического обновления данных через WorkManager.
 
